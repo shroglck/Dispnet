@@ -19,7 +19,7 @@ data=Kitti()
 
 train_loader=torch.utils.data.DataLoader(dataset=data,batch_size=4,shuffle=True)
 
-path="monc_model_new.pth"
+path="trail.pth"
 model=Encoder_Decoder().cuda()
 model.load_state_dict(torch.load(path))
 epochs=1
